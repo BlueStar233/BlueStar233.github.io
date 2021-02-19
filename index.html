@@ -4,7 +4,7 @@
 <style>
 	body{
 		background: url("https://api.ixiaowai.cn/gqapi/gqapi.php");
-		/* random image source */
+		/* random image api */
 		/*
 			1.https://bing.ioliu.cn/v1/rand?w=1920&h=1200
 			2.http://www.dmoe.cc/random.php
@@ -28,8 +28,14 @@
 		background-color: rgba(102,204,255,0.70);
 		align-self: center;
 		text-align: center;
+		font-size: 20px;
 		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-		
+	}
+	input{
+    		font-size: 20px;	
+ 	 }
+	button{
+		font-size: 20px;	
 	}
 	legend{
 		font-size: 24px;
@@ -53,6 +59,10 @@
 		 <input type="text" name="baidu">
 			<button onClick="OpenTab('https://www.baidu.com/s?wd&#61;','baidu')" >Search</button>
 		<br>
+			<p> Bing: </p>
+		 <input type="text" name="bing">
+			<button onClick="OpenTab('https://cn.bing.com/search?q&#61;','bing')" >Search</button>
+		<br>
 			<p> Bilibili: </p>
 			<input type="text" name="bilibili">
 			<button onClick="OpenTab('https://search.bilibili.com/all?keyword&#61;','bilibili')" >Search</button>
@@ -65,11 +75,11 @@
 		<input type="text" name="cpp" >
 			<button onClick="OpenTab('http://zh.cppreference.com/mwiki/index.php?search&#61;','cpp')" >Search</button>
 		<br>
-			<p>csdn:</p>
+			<p>CSDN:</p>
 		<input type="text" name="csdn">
 			<button onClick="OpenTab('https://so.csdn.net/so/search?q&#61;','csdn')" >Search</button>
 		<br>
-			<p>tieba:</p>
+			<p>Tieba:</p>
 		<input type="text" name="tieba">
 			<button onClick="OpenTab('https://tieba.baidu.com/f?kw&#61;','tieba')" >Enter</button>
 		<br>
