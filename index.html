@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	body{
+		background: url("https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php");
+		/* random image source */
+		/*
+			1.https://bing.ioliu.cn/v1/rand?w=1920&h=1200
+			2.http://www.dmoe.cc/random.php
+			3.https://img.xjh.me/random_img.php
+			4.https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images
+			5.https://api.mtyqx.cn/api/random.php
+			6.https://source.unsplash.com/random
+			7.https://api.isoyu.com/bing_images.php
+			8.https://api.ixiaowai.cn/api/api.php（二次元动漫）
+			https://api.ixiaowai.cn/mcapi/mcapi.php（mc酱动漫）
+			https://api.ixiaowai.cn/gqapi/gqapi.php（高清壁纸）
+			9.https://img.paulzzh.tech/touhou/random
+			10.set : (https://api.dongmanxingkong.com/suijitupian.html)
+			https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php
+			11.ser : (https://www.eee.dog/tech/rand-pic-api.html)
+			https://api.yimian.xyz/img
+			12.https://acg.toubiec.cn/random
+		*/
+	}
+	form{
+		
+		/*
+			I don't know how does it know which 
+			form it is.
+		*/
+		background-color: rgba(102,204,255,0.70);
+		align-self: center;
+		text-align: center;
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		
+	}
+	legend{
+		font-size: 24px;
+	}
+</style>
+<meta charset="utf-8">
+<title>NAVIgator</title>
+</head>
+<body>
+	<script>
+		function OpenTab(urlpre,sitename){
+			urlsuf = document.forms["SearchForm"][sitename].value
+			window.open(urlpre + urlsuf)
+			window.focus()
+		}
+	</script>
+	<form name="SearchForm">
+		<fieldset>
+			<legend>Search Guide</legend>
+			<p> Baidu: </p>
+		 <input type="text" name="baidu">
+			<button onClick="OpenTab('https://www.baidu.com/s?wd&#61;','baidu')" >Search</button>
+		<br>
+			<p> Bilibili: </p>
+			<input type="text" name="bilibili">
+			<button onClick="OpenTab('https://search.bilibili.com/all?keyword&#61;','bilibili')" >Search</button>
+		<br>
+			<p>Zhihu: </p>
+		<input type="text" name="zhihu">
+			<button onClick="OpenTab('https://www.zhihu.com/search?type&#61;content&q&#61;','zhihu')" >Search</button>
+		<br>
+			<p>CppReference: </p>
+		<input type="text" name="cpp" >
+			<button onClick="OpenTab('http://zh.cppreference.com/mwiki/index.php?search&#61;','cpp')" >Search</button>
+		<br>
+			<p>csdn:</p>
+		<input type="text" name="csdn">
+			<button onClick="OpenTab('https://so.csdn.net/so/search?q&#61;','csdn')" >Search</button>
+		<br>
+			<p>tieba:</p>
+		<input type="text" name="tieba">
+			<button onClick="OpenTab('https://tieba.baidu.com/f?kw&#61;','tieba')" >Enter</button>
+		<br>
+		</fieldset>
+	</form>
+	
+</body>
+</html>
