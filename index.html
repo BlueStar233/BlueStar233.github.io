@@ -48,7 +48,11 @@
 	<script>
 		function OpenTab(urlpre,sitename){
 			urlsuf = document.forms["SearchForm"][sitename].value
-			window.open(urlpre + urlsuf)
+			if(sitename == "cpp"){
+				window.open(urlpre + urlsuf+ " site:en.cppreference.com")
+			}else{
+				window.open(urlpre + urlsuf)
+			}
 			window.focus()
 		}
 	</script>
@@ -73,7 +77,7 @@
 		<br>
 			<p>CppReference: </p>
 		<input type="text" name="cpp" >
-			<button onClick="OpenTab('http://zh.cppreference.com/mwiki/index.php?search&#61;','cpp')" >Search</button>
+			<button onClick="OpenTab('https://cn.bing.com/search?FORM&#61;HPSBBS&amp;q&#61;','cpp')" >Search</button>
 		<br>
 			<p>CSDN:</p>
 		<input type="text" name="csdn">
